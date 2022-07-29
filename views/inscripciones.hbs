@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{RuteoNode}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+<body>
+	<div class="container">
+    <form clas="form-inscripciones">
+      <p class="form_parrafo">Completa el siguiente formulario para poder inscribirte a nuestras activiades <br /> 
+      Recibirás un correo electrónico con toda la info.</p>
+
+      <div class="form_container">
+        <div class="form_group">
+          <label for="name" class="form_label">Nombre Completo:</label>
+          <input type="text" id="name" class="form_input" placeholder=" " />
+          <span class="form_line"></span>
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_group">
+          <label for="edad" class="form_label">Edad:</label>
+          <input type="number" id="edad" class="form_input" placeholder=" " />
+          <span class="form_line"></span>
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_group">
+          <label for="mail" class="form_label">Correo electrónico:</label>
+          <input type="text" id="email" class="form_input" placeholder=" " />
+          <span class="form_line"></span>
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_group">
+          <label for="tel" class="form_label">Teléfono:</label>
+          <input type="text" id="tel" class="form_input" placeholder=" " />
+          <span class="form_line"></span>
+        </div>
+      </div>
+
+      <div class="form_container">
+        <div class="form_group">
+        <label for="actividad" class="form_label">Elegí tu actividad:</label>
+        <select name="Actividades" id="actividades">
+          <optgroup label="Talleres">  
+            <option value="modelado1">Modelado Nivel Inicial</option>
+            <option value="modelado2">Modelado Avanzado</option>
+            <option value="escultura">Escultura</option>
+          </optgroup>
+
+          <optgroup label="Seminarios">
+            <option value="pastas">Pastas Cerámicas</option>
+            <option value="engobes">Engobes Artesanales</option>
+            <option value="esmaltes">Esmaltes Artesanales</option>
+            <option value="coccion">Métodos de Cocción Ansestrales</option>
+          </optgroup>
+
+          <optgroup label="Cursos">
+            <option value="hornos">Hornos Cerámicos</option>
+            <option value="utilitarios">Piezas Utilitarias</option>
+            <option value="instrumentos">Cerámica Sonora</option>
+          </optgroup>
+        </select>
+
+        <input type="submit" className="submit" value="Inscribirme" />
+      </div>  
+    </form>
+  </div>
+	{{{body}}}
+</body>
+</html>
